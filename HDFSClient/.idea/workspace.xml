@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dbacb658-dc0f-4b85-ae66-ad8f7af70ce6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +99,7 @@
       <workItem from="1675203390813" duration="255000" />
       <workItem from="1675203648646" duration="1313000" />
       <workItem from="1675204964721" duration="212000" />
-      <workItem from="1675205506345" duration="682000" />
+      <workItem from="1675205506345" duration="1320000" />
     </task>
     <servers />
   </component>
