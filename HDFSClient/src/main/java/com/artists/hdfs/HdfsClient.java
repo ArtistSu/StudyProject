@@ -20,6 +20,7 @@ import java.net.URISyntaxException;
  */
 public class HdfsClient {
     private FileSystem fs;
+
     @Before
     public void init() throws IOException, InterruptedException, URISyntaxException {
         // 连接的集群的nn地址
@@ -27,6 +28,7 @@ public class HdfsClient {
         // 创建一个配置文件
         Configuration configuration = new Configuration();
         configuration.set("dfs.client.use.datanode.hostname", "true");
+        configuration.set("dfs.replication", "2");
 
         // 用户
         String user = "sylgg0918";
@@ -34,10 +36,12 @@ public class HdfsClient {
         // 1.获取客户端对象
         fs = FileSystem.get(uri, configuration, user);
     }
+
     @After
-    public void close() throws IOException{
+    public void close() throws IOException {
         fs.close();
     }
+
     @Test
     public void testmkdir() throws URISyntaxException, IOException, InterruptedException {
         // 2.创建一个文件夹
@@ -45,6 +49,12 @@ public class HdfsClient {
     }
 
     // 上传
+
+    /**
+     * 参数优先级 从左到右优先级依次递增
+     * hdfs-default.xml -> hdfs.site.xml -> resources资源目录下的配置文件 -> 代码中的配置(configuration对象)
+     * @throws IOException
+     */
     @Test
     public void testPut() throws IOException {
         /**
@@ -54,5 +64,6 @@ public class HdfsClient {
          * srcs: 源数据路径(本地路径)
          * dst: 目的地路径
          */
-        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"),new Path("hdfs://hadoop102/xiyou/huaguoshan"));}
+        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/xiyou/huaguoshan"));
+    }
 }

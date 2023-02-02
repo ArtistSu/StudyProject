@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbacb658-dc0f-4b85-ae66-ad8f7af70ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sunwukong.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2KSdQ52dhzrgDkMYRqstbTmdYc0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -121,6 +122,7 @@
       <workItem from="1675204964721" duration="212000" />
       <workItem from="1675205506345" duration="2496000" />
       <workItem from="1675290682083" duration="11192000" />
+      <workItem from="1675380620481" duration="806000" />
     </task>
     <servers />
   </component>
@@ -132,19 +134,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/video-47" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -155,7 +145,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java</url>
-          <line>48</line>
+          <line>57</line>
           <properties class="com.artists.hdfs.HdfsClient" method="testPut">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
