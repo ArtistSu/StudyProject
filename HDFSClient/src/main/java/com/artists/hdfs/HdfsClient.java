@@ -1,5 +1,6 @@
 package com.artists.hdfs;
 
+import org.apache.commons.lang3.builder.ToStringExclude;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -81,6 +82,7 @@ public class HdfsClient {
         fs.copyToLocalFile(false, new Path("/xiyou/huaguoshan"), new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources"), false);
     }
 
+    // 文件删除
     @Test
     public void testRm() throws IOException {
         /**
