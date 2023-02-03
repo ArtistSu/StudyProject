@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="71cb7aaf-528a-460e-b975-dd0a2c820ba1" name="Changes" comment="" />
+=======
+    <list default="true" id="dbacb658-dc0f-4b85-ae66-ad8f7af70ce6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" afterDir="false" />
+    </list>
+>>>>>>> 7eb81e2b4aef18577310b68d5117738d09247aed
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
