@@ -2,8 +2,7 @@ package com.artists.hdfs;
 
 import org.apache.commons.lang3.builder.ToStringExclude;
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +10,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 
 /**
  * 客户端代码常用套路
@@ -66,7 +66,7 @@ public class HdfsClient {
          * srcs: 源数据路径(本地路径)
          * dst: 目的地路径
          */
-        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/xiyou/huaguoshan/sunwukong.txt"));
+        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/output/sunwukong.txt"));
     }
 
     // 文件下载
@@ -108,5 +108,29 @@ public class HdfsClient {
 
         // 目录更名
         fs.rename(new Path("/xiyou"), new Path("/output"));
+    }
+
+    // 获取文件详细信息
+    @Test
+    public void  findDetail() throws IOException {
+        RemoteIterator<LocatedFileStatus> listFiles = fs.listFiles(new Path("/"), true);
+        while(listFiles.hasNext()){
+            LocatedFileStatus fileStatus = listFiles.next();
+
+            System.out.println("======"+ fileStatus.getPath() + "======");
+            System.out.println(fileStatus.getPermission());
+            System.out.println(fileStatus.getOwner());
+            System.out.println(fileStatus.getGroup());
+            System.out.println(fileStatus.getLen());
+            System.out.println(fileStatus.getModificationTime());
+            System.out.println(fileStatus.getReplication());
+            System.out.println(fileStatus.getBlockSize());
+            System.out.println(fileStatus.getPath().getName());
+
+            // 获取块信息
+            BlockLocation[] blockLocations = fileStatus.getBlockLocations();
+
+            System.out.println(Arrays.toString(blockLocations));
+        }
     }
 }
