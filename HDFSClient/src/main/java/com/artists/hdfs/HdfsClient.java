@@ -80,4 +80,14 @@ public class HdfsClient {
          */
         fs.copyToLocalFile(false, new Path("/xiyou/huaguoshan"), new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources"), false);
     }
+
+    @Test
+    public void testRm() throws IOException {
+        /**
+         * 参数解读
+         * path: 要删除的HDFS路径
+         * b: 是否递归删除
+         */
+        fs.delete(new Path("/xiyou"), true);
+    }
 }
