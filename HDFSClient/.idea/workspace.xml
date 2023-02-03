@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbacb658-dc0f-4b85-ae66-ad8f7af70ce6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/huaguoshan/.sunwukong.txt.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/huaguoshan/sunwukong.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sunwukong.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sunwukong.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sunwukong.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sunwukong.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,25 +50,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ArtistS/GitRepository/StudyProject/HDFSClient&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ArtistS/GitRepository/StudyProject/HDFSClient",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.HdfsClient.testPut">
+}]]></component>
+  <component name="RunManager" selected="JUnit.HdfsClient.testGet">
+    <configuration name="HdfsClient.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDFSClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.artists.hdfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.artists.hdfs" />
+      <option name="MAIN_CLASS_NAME" value="com.artists.hdfs.HdfsClient" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HdfsClient.testPut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
@@ -97,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HdfsClient.testGet" />
         <item itemvalue="JUnit.HdfsClient.testPut" />
         <item itemvalue="JUnit.HdfsClient.testmkdir" />
       </list>
@@ -122,7 +146,7 @@
       <workItem from="1675204964721" duration="212000" />
       <workItem from="1675205506345" duration="2496000" />
       <workItem from="1675290682083" duration="11192000" />
-      <workItem from="1675380620481" duration="806000" />
+      <workItem from="1675380620481" duration="2513000" />
     </task>
     <servers />
   </component>
@@ -140,19 +164,7 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java</url>
-          <line>57</line>
-          <properties class="com.artists.hdfs.HdfsClient" method="testPut">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

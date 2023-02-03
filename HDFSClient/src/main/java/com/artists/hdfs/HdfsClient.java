@@ -28,7 +28,7 @@ public class HdfsClient {
         // 创建一个配置文件
         Configuration configuration = new Configuration();
         configuration.set("dfs.client.use.datanode.hostname", "true");
-        configuration.set("dfs.replication", "2");
+//        configuration.set("dfs.replication", "2");
 
         // 用户
         String user = "sylgg0918";
@@ -53,6 +53,7 @@ public class HdfsClient {
     /**
      * 参数优先级 从左到右优先级依次递增
      * hdfs-default.xml -> hdfs.site.xml -> resources资源目录下的配置文件 -> 代码中的配置(configuration对象)
+     *
      * @throws IOException
      */
     @Test
@@ -65,5 +66,18 @@ public class HdfsClient {
          * dst: 目的地路径
          */
         fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/xiyou/huaguoshan"));
+    }
+
+    // 文件下载
+    @Test
+    public void testGet() throws IOException {
+        /**
+         * 参数解读
+         * delSrc: 源文件是否删除
+         * src: HDFS文件路径
+         * dst: Windows目标地址路径
+         * useRawLocalFileSystem: 是否使用原始文件系统, false不使用则会有crc校验, true为使用则不会使用crc校验
+         */
+        fs.copyToLocalFile(false, new Path("/xiyou/huaguoshan"), new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources"), false);
     }
 }
