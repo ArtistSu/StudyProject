@@ -66,7 +66,7 @@ public class HdfsClient {
          * srcs: 源数据路径(本地路径)
          * dst: 目的地路径
          */
-        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/xiyou/huaguoshan"));
+        fs.copyFromLocalFile(false, true, new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources\\sunwukong.txt"), new Path("hdfs://hadoop102/xiyou/huaguoshan/sunwukong.txt"));
     }
 
     // 文件下载
@@ -91,5 +91,22 @@ public class HdfsClient {
          * b: 是否递归删除
          */
         fs.delete(new Path("/xiyou"), true);
+    }
+
+    // 文件的更名和移动
+    @Test
+    public void testmv() throws IOException {
+        /**
+         * 参数解读
+         * path: 源文件路径
+         * path1: 目标文件路径
+         */
+        fs.rename(new Path("/xiyou/huaguoshan/sunwukong.txt"), new Path("/xiyou/huaguoshan/swk.txt"));
+
+        // 文件的移动以及更名
+        fs.rename(new Path("/xiyou/huaguoshan/swk.txt"), new Path("/cls.txt"));
+
+        // 目录更名
+        fs.rename(new Path("/xiyou"), new Path("/output"));
     }
 }
