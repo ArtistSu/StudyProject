@@ -1,5 +1,6 @@
 package com.artists.hdfs;
 
+import org.apache.commons.lang3.builder.ToStringExclude;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -79,5 +80,16 @@ public class HdfsClient {
          * useRawLocalFileSystem: 是否使用原始文件系统, false不使用则会有crc校验, true为使用则不会使用crc校验
          */
         fs.copyToLocalFile(false, new Path("/xiyou/huaguoshan"), new Path("C:\\Users\\ArtistS\\GitRepository\\StudyProject\\HDFSClient\\src\\main\\resources"), false);
+    }
+
+    // 文件删除
+    @Test
+    public void testRm() throws IOException {
+        /**
+         * 参数解读
+         * path: 要删除的HDFS路径
+         * b: 是否递归删除
+         */
+        fs.delete(new Path("/xiyou"), true);
     }
 }
