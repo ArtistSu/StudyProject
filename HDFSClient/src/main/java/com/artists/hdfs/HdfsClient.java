@@ -112,12 +112,12 @@ public class HdfsClient {
 
     // 获取文件详细信息
     @Test
-    public void  findDetail() throws IOException {
+    public void findDetail() throws IOException {
         RemoteIterator<LocatedFileStatus> listFiles = fs.listFiles(new Path("/"), true);
-        while(listFiles.hasNext()){
+        while (listFiles.hasNext()) {
             LocatedFileStatus fileStatus = listFiles.next();
 
-            System.out.println("======"+ fileStatus.getPath() + "======");
+            System.out.println("======" + fileStatus.getPath() + "======");
             System.out.println(fileStatus.getPermission());
             System.out.println(fileStatus.getOwner());
             System.out.println(fileStatus.getGroup());
@@ -131,6 +131,20 @@ public class HdfsClient {
             BlockLocation[] blockLocations = fileStatus.getBlockLocations();
 
             System.out.println(Arrays.toString(blockLocations));
+        }
+    }
+
+    // 判断是文件夹还是文件
+    @Test
+    public void testFile() throws IOException {
+        FileStatus[] fileStatuses = fs.listStatus(new Path("/"));
+        for (FileStatus status :
+                fileStatuses) {
+            if (status.isFile()) {
+                System.out.println("文件: " + status.getPath().getName());
+            } else {
+                System.out.println("目录: " + status.getPath().getName());
+            }
         }
     }
 }

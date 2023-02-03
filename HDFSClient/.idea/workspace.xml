@@ -7,7 +7,6 @@
     <list default="true" id="dbacb658-dc0f-4b85-ae66-ad8f7af70ce6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/artists/hdfs/HdfsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/artists/hdfs/HdfsClient.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HdfsClient.findDetail">
+  <component name="RunManager" selected="JUnit.HdfsClient.testFile">
     <configuration name="HdfsClient.findDetail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
@@ -75,6 +74,22 @@
       <option name="PACKAGE_NAME" value="com.artists.hdfs" />
       <option name="MAIN_CLASS_NAME" value="com.artists.hdfs.HdfsClient" />
       <option name="METHOD_NAME" value="findDetail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HdfsClient.testFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDFSClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.artists.hdfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.artists.hdfs" />
+      <option name="MAIN_CLASS_NAME" value="com.artists.hdfs.HdfsClient" />
+      <option name="METHOD_NAME" value="testFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HdfsClient.testmkdir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HDFSClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.artists.hdfs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.artists.hdfs" />
-      <option name="MAIN_CLASS_NAME" value="com.artists.hdfs.HdfsClient" />
-      <option name="METHOD_NAME" value="testmkdir" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HdfsClient.testmv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
@@ -146,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HdfsClient.testFile" />
         <item itemvalue="JUnit.HdfsClient.findDetail" />
         <item itemvalue="JUnit.HdfsClient.testPut" />
         <item itemvalue="JUnit.HdfsClient.testmv" />
         <item itemvalue="JUnit.HdfsClient.testRm" />
-        <item itemvalue="JUnit.HdfsClient.testmkdir" />
       </list>
     </recent_temporary>
   </component>
