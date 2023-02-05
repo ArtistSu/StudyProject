@@ -61,9 +61,9 @@ public class FlowBean implements Writable {
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-        dataInput.readLong();
-        dataInput.readLong();
-        dataInput.readLong();
+        this.upFlow = dataInput.readLong();
+        this.downFlow = dataInput.readLong();
+        this.sumFlow = dataInput.readLong();
     }
 
     @Override
