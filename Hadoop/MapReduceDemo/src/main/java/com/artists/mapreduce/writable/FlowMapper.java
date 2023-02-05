@@ -30,6 +30,7 @@ public class FlowMapper extends Mapper<LongWritable, Text, Text, FlowBean> {
         String up = splits[splits.length - 3];
         String down = splits[splits.length - 2];
 
+
         // 4.封装
         outK.set(phone);
         outV.setUpFlow(Long.parseLong(up));
